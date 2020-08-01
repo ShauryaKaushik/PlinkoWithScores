@@ -98,6 +98,20 @@ function draw() {
    
      particles[j].display();
 
+    if ( particles[j].body.position.x < 300  &&  particles[j].body.position.y>760) {
+       score = score + 500;
+      particles.pop();
+     }
+    else if (particles[j].body.position.x < 600  &&  particles[j].body.position.x > 301  &&  particles[j].body.position.y  >  760) {
+      score = score + 100;
+     
+      particles.pop();
+     }
+    else if ( particles[j].body.position.x < 900   &&   particles[j].body.position.x > 601   && particles[j].body.position.y > 760  )  {
+      score = score + 200;
+      particles.pop();
+    }
+    
    }
    for (var k = 0; k < divisions.length; k++) {
      
