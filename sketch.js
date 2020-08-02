@@ -100,3 +100,10 @@ function draw() {
      divisions[k].display();
    }
 }
+
+function mousePressed(){
+  if(gameState!=="end"){
+      count++;
+     particles.push(new Particle(mouseX, 10, 10, 10)); 
+  }   
+}
