@@ -112,6 +112,12 @@ function draw() {
      
      divisions[k].display();
    }
+  
+  if(score >= 5)
+{
+ gameState = "end"    
+}
+     
 }
 
 function mousePressed(){
