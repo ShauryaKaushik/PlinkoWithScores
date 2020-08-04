@@ -115,7 +115,9 @@ function draw() {
   
   if(score >= 5)
 {
- gameState = "end"    
+ gameState = "end"
+ textSize(60); 
+ text("GAME OVER",150,250) 
 }
      
 }
