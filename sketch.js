@@ -113,7 +113,7 @@ function draw() {
      divisions[k].display();
    }
   
-  if(score >= 5)
+  if( count >= 5)
 {
  gameState = "end"
  textSize(60); 
